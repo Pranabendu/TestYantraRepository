@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="6" total="10" passed="4" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Data base is connected]]>
+    </line>
+    <line>
+      <![CDATA[Login has to be done]]>
+    </line>
+    <line>
+      <![CDATA[Logout Succfully]]>
+    </line>
+    <line>
+      <![CDATA[Browser is closing...]]>
+    </line>
+    <line>
+      <![CDATA[Login has to be done]]>
+    </line>
+    <line>
+      <![CDATA[Logout Succfully]]>
+    </line>
+    <line>
+      <![CDATA[Browser is closing...]]>
+    </line>
+    <line>
+      <![CDATA[Login has to be done]]>
+    </line>
+    <line>
+      <![CDATA[Logout Succfully]]>
+    </line>
+    <line>
+      <![CDATA[Browser is closing...]]>
+    </line>
+    <line>
+      <![CDATA[Login has to be done]]>
+    </line>
+    <line>
+      <![CDATA[Logout Succfully]]>
+    </line>
+    <line>
+      <![CDATA[Browser is closing...]]>
+    </line>
+    <line>
+      <![CDATA[Data base is closing...]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-07-13T18:13:04 IST" name="Suite" finished-at="2023-07-13T18:14:23 IST" duration-ms="79404">
+    <groups>
+      <group name="regration">
+        <method signature="Integration_between_Doctor_and_PateintTest.doctor()[pri:0, instance:Com.Hms.TestYantratest.Integration_between_Doctor_and_PateintTest@31f9b85e]" name="doctor" class="Com.Hms.TestYantratest.Integration_between_Doctor_and_PateintTest"/>
+        <method signature="Manage_Patient_HistorTest.history()[pri:0, instance:Com.Hms.TestYantratest.Manage_Patient_HistorTest@683dbc2c]" name="history" class="Com.Hms.TestYantratest.Manage_Patient_HistorTest"/>
+      </group> <!-- regration -->
+      <group name="smoke">
+        <method signature="Adding_Doctors_and_and_search_PatientsTest.patient()[pri:0, instance:Com.Hms.TestYantratest.Adding_Doctors_and_and_search_PatientsTest@68267da0]" name="patient" class="Com.Hms.TestYantratest.Adding_Doctors_and_and_search_PatientsTest"/>
+        <method signature="Check_ReportTest.report()[pri:0, instance:Com.Hms.TestYantratest.Check_ReportTest@d21a74c]" name="report" class="Com.Hms.TestYantratest.Check_ReportTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2023-07-13T18:13:04 IST" name="Test" finished-at="2023-07-13T18:14:23 IST" duration-ms="79404">
+      <class name="Com.Hms.TestYantratest.Adding_Doctors_and_and_search_PatientsTest">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:Com.Hms.TestYantratest.Adding_Doctors_and_and_search_PatientsTest@68267da0]" started-at="2023-07-13T18:13:59 IST" name="openBrowser" finished-at="2023-07-13T18:14:00 IST" duration-ms="1205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:Com.Hms.TestYantratest.Adding_Doctors_and_and_search_PatientsTest@68267da0]" started-at="2023-07-13T18:14:00 IST" name="loginToApplication" finished-at="2023-07-13T18:14:00 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login has to be done]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method signature="patient()[pri:0, instance:Com.Hms.TestYantratest.Adding_Doctors_and_and_search_PatientsTest@68267da0]" started-at="2023-07-13T18:14:00 IST" name="patient" finished-at="2023-07-13T18:14:23 IST" duration-ms="23012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patient -->
+        <test-method is-config="true" signature="logoutToApplication()[pri:0, instance:Com.Hms.TestYantratest.Adding_Doctors_and_and_search_PatientsTest@68267da0]" started-at="2023-07-13T18:14:23 IST" name="logoutToApplication" finished-at="2023-07-13T18:14:23 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logout Succfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logoutToApplication -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Com.Hms.TestYantratest.Adding_Doctors_and_and_search_PatientsTest@68267da0]" started-at="2023-07-13T18:14:23 IST" name="closeBrowser" finished-at="2023-07-13T18:14:23 IST" duration-ms="56" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser is closing...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Com.Hms.TestYantratest.Adding_Doctors_and_and_search_PatientsTest -->
+      <class name="Com.Hms.TestYantratest.Check_ReportTest">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:Com.Hms.TestYantratest.Check_ReportTest@d21a74c]" started-at="2023-07-13T18:13:31 IST" name="openBrowser" finished-at="2023-07-13T18:13:32 IST" duration-ms="1391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:Com.Hms.TestYantratest.Check_ReportTest@d21a74c]" started-at="2023-07-13T18:13:32 IST" name="loginToApplication" finished-at="2023-07-13T18:13:32 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login has to be done]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method signature="report()[pri:0, instance:Com.Hms.TestYantratest.Check_ReportTest@d21a74c]" started-at="2023-07-13T18:13:32 IST" name="report" finished-at="2023-07-13T18:13:43 IST" duration-ms="11133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Com.Hms.TestYantratest.Check_ReportTest@d21a74c]" started-at="2023-07-13T18:13:43 IST" name="closeBrowser" finished-at="2023-07-13T18:13:43 IST" duration-ms="122" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser is closing...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="logoutToApplication()[pri:0, instance:Com.Hms.TestYantratest.Check_ReportTest@d21a74c]" started-at="2023-07-13T18:13:43 IST" name="logoutToApplication" finished-at="2023-07-13T18:13:43 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logout Succfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logoutToApplication -->
+      </class> <!-- Com.Hms.TestYantratest.Check_ReportTest -->
+      <class name="Com.Hms.TestYantratest.Integration_between_Doctor_and_PateintTest">
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:Com.Hms.TestYantratest.Integration_between_Doctor_and_PateintTest@31f9b85e]" started-at="2023-07-13T18:13:03 IST" name="connectToDB" finished-at="2023-07-13T18:13:04 IST" duration-ms="349" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Data base is connected]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- connectToDB -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:Com.Hms.TestYantratest.Integration_between_Doctor_and_PateintTest@31f9b85e]" started-at="2023-07-13T18:13:04 IST" name="openBrowser" finished-at="2023-07-13T18:13:06 IST" duration-ms="2073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="doctor()[pri:0, instance:Com.Hms.TestYantratest.Integration_between_Doctor_and_PateintTest@31f9b85e]" started-at="2023-07-13T18:13:06 IST" name="doctor" finished-at="2023-07-13T18:13:31 IST" duration-ms="24767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doctor -->
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:Com.Hms.TestYantratest.Integration_between_Doctor_and_PateintTest@31f9b85e]" started-at="2023-07-13T18:13:06 IST" name="loginToApplication" finished-at="2023-07-13T18:13:06 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login has to be done]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method is-config="true" signature="logoutToApplication()[pri:0, instance:Com.Hms.TestYantratest.Integration_between_Doctor_and_PateintTest@31f9b85e]" started-at="2023-07-13T18:13:31 IST" name="logoutToApplication" finished-at="2023-07-13T18:13:31 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logout Succfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logoutToApplication -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Com.Hms.TestYantratest.Integration_between_Doctor_and_PateintTest@31f9b85e]" started-at="2023-07-13T18:13:31 IST" name="closeBrowser" finished-at="2023-07-13T18:13:31 IST" duration-ms="72" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser is closing...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="closeDB()[pri:0, instance:Com.Hms.TestYantratest.Integration_between_Doctor_and_PateintTest@31f9b85e]" started-at="2023-07-13T18:14:23 IST" name="closeDB" finished-at="2023-07-13T18:14:23 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Data base is closing...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeDB -->
+      </class> <!-- Com.Hms.TestYantratest.Integration_between_Doctor_and_PateintTest -->
+      <class name="Com.Hms.TestYantratest.Manage_Patient_HistorTest">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:Com.Hms.TestYantratest.Manage_Patient_HistorTest@683dbc2c]" started-at="2023-07-13T18:13:43 IST" name="openBrowser" finished-at="2023-07-13T18:13:45 IST" duration-ms="1328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:Com.Hms.TestYantratest.Manage_Patient_HistorTest@683dbc2c]" started-at="2023-07-13T18:13:45 IST" name="loginToApplication" finished-at="2023-07-13T18:13:45 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login has to be done]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method signature="history()[pri:0, instance:Com.Hms.TestYantratest.Manage_Patient_HistorTest@683dbc2c]" started-at="2023-07-13T18:13:45 IST" name="history" finished-at="2023-07-13T18:13:58 IST" duration-ms="13915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- history -->
+        <test-method is-config="true" signature="logoutToApplication()[pri:0, instance:Com.Hms.TestYantratest.Manage_Patient_HistorTest@683dbc2c]" started-at="2023-07-13T18:13:58 IST" name="logoutToApplication" finished-at="2023-07-13T18:13:58 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logout Succfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logoutToApplication -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Com.Hms.TestYantratest.Manage_Patient_HistorTest@683dbc2c]" started-at="2023-07-13T18:13:58 IST" name="closeBrowser" finished-at="2023-07-13T18:13:59 IST" duration-ms="137" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser is closing...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Com.Hms.TestYantratest.Manage_Patient_HistorTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
