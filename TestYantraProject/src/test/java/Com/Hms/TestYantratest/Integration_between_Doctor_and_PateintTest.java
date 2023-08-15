@@ -162,7 +162,7 @@ public class Integration_between_Doctor_and_PateintTest extends BaceClass{
 		logoutdoc.click();
 		Thread.sleep(2000);		
 		
-		driver.close();
+		
 	}
 
 }

@@ -171,7 +171,6 @@ public class Adding_Doctors_and_and_search_PatientsTest extends BaceClass{
 			
 		}
 		
-		driver.close();
 	}
 
 }

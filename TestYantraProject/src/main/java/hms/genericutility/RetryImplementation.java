@@ -26,5 +26,4 @@ public class RetryImplementation implements IRetryAnalyzer
 		return false;	
 	}
 	
-
 }

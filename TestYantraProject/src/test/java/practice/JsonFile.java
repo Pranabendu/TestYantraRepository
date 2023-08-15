@@ -19,12 +19,20 @@ public class JsonFile {
 //		JSONObject map=(JSONObject)obj;
 //		System.out.println(map.get("un"));
 		
-		JSONParser js = new JSONParser();
-		Object obj = js.parse(new FileReader("./src/test/resources/demoData.json"));
+//		JSONParser js = new JSONParser();
+//		Object obj = js.parse(new FileReader("./src/test/resources/demoData.json"));
+//		JSONObject map = (JSONObject) obj;
+//		System.out.println(map.get("url"));
+//		Object s1 = map.get("un");
+//		String st = s1.toString();
+//		System.out.println(s1);
+		
+		JSONParser jp = new JSONParser();
+		Object obj = jp.parse(new FileReader("./src/test/resources/demoData.json"));
 		JSONObject map = (JSONObject) obj;
-		System.out.println(map.get("url"));
-		Object s1 = map.get("un");
-		System.out.println(s1);
+		Object ourl = map.get("url");
+		String url = ourl.toString();
+		System.out.println(url);
 	}
 
 }                               

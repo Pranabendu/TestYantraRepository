@@ -13,6 +13,16 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ExcelUtility {
 	
+	/**
+	 * this method is for Get Data From Excel
+	 * @param filepath
+	 * @param sheetname
+	 * @param rownum
+	 * @param colnum
+	 * @return
+	 * @throws EncryptedDocumentException
+	 * @throws IOException
+	 */
 	public String getDatafromExcel(String filepath,String sheetname,int rownum,int colnum) throws EncryptedDocumentException, IOException {
 		FileInputStream fin = new FileInputStream(filepath);
 		Workbook book = WorkbookFactory.create(fin);
@@ -21,6 +31,16 @@ public class ExcelUtility {
 		return data;
 	}
 	
+	/**
+	 * this method is for get Data From Excel Based on TestId
+	 * @param filepath
+	 * @param sheetname
+	 * @param testid
+	 * @param colvalue
+	 * @return
+	 * @throws EncryptedDocumentException
+	 * @throws IOException
+	 */
 	public String getDataFromExcelBasedTestId(String filepath,String sheetname,String testid,String colvalue) throws EncryptedDocumentException, IOException {
 		FileInputStream fin = new FileInputStream(filepath);
 		Workbook book = WorkbookFactory.create(fin);

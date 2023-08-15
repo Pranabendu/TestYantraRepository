@@ -3,17 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Com.Hms.TestYantratest.Integration_between_Doctor_and_PateintTest">
+      <class name="practice.JsonFile">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-          <include name="connectToDB"/>
-          <include name="doctor"/>
-          <include name="closeDB"/>
-          <include name="loginToApplication"/>
-          <include name="logoutToApplication"/>
+          <include name="jsonfile"/>
         </methods>
-      </class> <!-- Com.Hms.TestYantratest.Integration_between_Doctor_and_PateintTest -->
+      </class> <!-- practice.JsonFile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

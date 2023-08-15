@@ -26,6 +26,7 @@ public class DataBaseUtility {
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			
 		}
 		
 	}
@@ -36,7 +37,7 @@ public class DataBaseUtility {
 		DriverManager.registerDriver(dr);
 		conn = DriverManager.getConnection(url,username,password);
 		}catch (Exception e) {
-			
+			e.getMessage();
 		}
 	}
 	public ResultSet executeQuery(String query) throws SQLException {
@@ -52,6 +53,7 @@ public class DataBaseUtility {
 		try {
 		  conn.close();
 		}catch (Exception e) {
+			e.getMessage();
 		}
 	}
 	public boolean executeQuerryAndVerify(String querry,int cloumnIndex,String expectedData) throws Throwable {
