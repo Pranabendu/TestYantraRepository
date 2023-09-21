@@ -3,6 +3,7 @@ package practice;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Random;
@@ -11,6 +12,11 @@ import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
 
 public class Pro {
 
@@ -22,9 +28,10 @@ public class Pro {
 	 * @param args
 	 * @throws IOException 
 	 * @throws EncryptedDocumentException 
+	 * @throws InterruptedException 
 	 */
 	
-	public static void main(String[] args) throws EncryptedDocumentException, IOException {
+	public static void main(String[] args) throws EncryptedDocumentException, IOException, InterruptedException {
 //		int r = new Random().nextInt(3000);
 //		System.out.println(r);
 		
@@ -83,13 +90,29 @@ public class Pro {
 //		System.out.println(testCellNum);
 //	}
 
-		Calendar cal = Calendar.getInstance();
-		cal.add(Calendar.DATE, 20);
-		Date datetime = cal.getTime();
-		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
-		String date = sdf.format(datetime);
-		System.out.println(date);
+//		Calendar cal = Calendar.getInstance();
+//		cal.add(Calendar.DATE, 20);
+//		Date datetime = cal.getTime();
+//		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+//		String date = sdf.format(datetime);
+//		System.out.println(date);
 		
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--disable-notification");
+		
+		WebDriver driver = new ChromeDriver(options);
+
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().window().maximize();
+
+		driver.get("https://www.makemytrip.com");
+		Actions act = new Actions(driver);
+		act.click().perform();
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,500)");
+		Thread.sleep(2000);
+		js.executeScript("window.scrollBy(0,-500)");
 	}
 
 }

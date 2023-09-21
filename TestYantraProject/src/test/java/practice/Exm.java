@@ -10,6 +10,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.testng.Reporter;
+import org.testng.annotations.Test;
 
 public class Exm {
 
@@ -41,8 +42,10 @@ public class Exm {
 			}
 		}
 		
-		
-//		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
+	}
+	@Test
+	void calender() {
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
 //		Calendar cal = Calendar.getInstance();
 //		cal.add(Calendar.DATE, -20);
 //		System.out.println(cal.toString());
@@ -50,6 +53,13 @@ public class Exm {
 //		System.out.println(dt.toString());
 //		String date = sdf.format(dt);
 //		System.out.println(date);
+		Calendar cal = Calendar.getInstance();
+		cal.add(Calendar.DATE, 4);
+		Date date = cal.getTime();
+		System.out.println(date);
+		System.out.println(sdf.format(date));
 	}
+
+	
 
 }

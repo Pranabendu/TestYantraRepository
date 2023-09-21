@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-10T15:32:41 IST" name="Default suite" finished-at="2023-08-10T15:32:41 IST" duration-ms="93">
+  <suite started-at="2023-09-20T12:36:18 IST" name="Suite" finished-at="2023-09-20T12:36:27 IST" duration-ms="9099">
     <groups>
+      <group name="regration">
+        <method signature="Amazon.trip()[pri:0, instance:Parallel_And_CrossBrowser_Testing.Amazon@6aeb35e6]" name="trip" class="Parallel_And_CrossBrowser_Testing.Amazon"/>
+      </group> <!-- regration -->
     </groups>
-    <test started-at="2023-08-10T15:32:41 IST" name="Default test" finished-at="2023-08-10T15:32:41 IST" duration-ms="93">
-      <class name="practice.JsonFile">
-        <test-method signature="jsonfile()[pri:0, instance:practice.JsonFile@409bf450]" started-at="2023-08-10T15:32:41 IST" name="jsonfile" finished-at="2023-08-10T15:32:41 IST" duration-ms="24" status="PASS">
+    <test started-at="2023-09-20T12:36:18 IST" name="Test" finished-at="2023-09-20T12:36:27 IST" duration-ms="9099">
+      <class name="Parallel_And_CrossBrowser_Testing.Amazon">
+        <test-method signature="icc()[pri:0, instance:Parallel_And_CrossBrowser_Testing.Amazon@6aeb35e6]" started-at="2023-09-20T12:36:18 IST" name="icc" finished-at="2023-09-20T12:36:25 IST" duration-ms="7512" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jsonfile -->
-      </class> <!-- practice.JsonFile -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- icc -->
+        <test-method signature="flipkart()[pri:0, instance:Parallel_And_CrossBrowser_Testing.Amazon@6aeb35e6]" started-at="2023-09-20T12:36:18 IST" name="flipkart" finished-at="2023-09-20T12:36:26 IST" duration-ms="8237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flipkart -->
+        <test-method signature="amazon()[pri:0, instance:Parallel_And_CrossBrowser_Testing.Amazon@6aeb35e6]" started-at="2023-09-20T12:36:18 IST" name="amazon" finished-at="2023-09-20T12:36:27 IST" duration-ms="9059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazon -->
+        <test-method signature="trip()[pri:0, instance:Parallel_And_CrossBrowser_Testing.Amazon@6aeb35e6]" started-at="2023-09-20T12:36:18 IST" name="trip" finished-at="2023-09-20T12:36:25 IST" duration-ms="6849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- trip -->
+      </class> <!-- Parallel_And_CrossBrowser_Testing.Amazon -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

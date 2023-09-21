@@ -18,8 +18,8 @@ public class RetryImplementation implements IRetryAnalyzer
 	public boolean retry(ITestResult result) 
 	{
 		int count = 0;
-		int trtlimit = 1;
-		while (count<trtlimit) {
+		int trylimit = 1;
+		while (count<trylimit) {
 			count++;
 			return true;
 		}

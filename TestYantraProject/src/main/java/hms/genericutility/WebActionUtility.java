@@ -126,7 +126,7 @@ public class WebActionUtility {
 		JavaUtility ju = new JavaUtility();
 		String res = ju.getDateWithTime();
 		String FailMethodName = screenShotName;
-		TakesScreenshot ts = (TakesScreenshot) BaceClass.listenerDriver;
+		TakesScreenshot ts = (TakesScreenshot) driver;
 		File temp = ts.getScreenshotAs(OutputType.FILE);
 		File per = new File("./Screenshots/"+FailMethodName+"_"+res+".png");
 		try {

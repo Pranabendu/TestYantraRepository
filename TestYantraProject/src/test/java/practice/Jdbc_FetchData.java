@@ -48,7 +48,7 @@ public class Jdbc_FetchData {
 			e.printStackTrace();
 		}
 	 }
-		 
+		
 	String executeQuary() {
 		String data = "";
 		try {
