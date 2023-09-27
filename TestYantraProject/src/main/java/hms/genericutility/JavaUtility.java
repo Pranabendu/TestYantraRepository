@@ -23,19 +23,16 @@ public class JavaUtility {
 	
 	public String getRandomMobileNumber() {
 		
-		String[] digit= new String[10];
+		String[] ran= new String[10];
 		for (int i = 0; i < 10; i++) {
-			int mobileNumber = random.nextInt(10);
-			
-			digit[i]=Integer.toString(mobileNumber);
-			
+			int m = random.nextInt(10);
+			ran[i] = Integer.toString(m);
 		}
-		
-		String mobileNumber = "";
-		for (int i = 0; i < digit.length; i++) {
-			mobileNumber = digit[i];
+		String mobileNo = "";
+		for(String n:ran) {
+			mobileNo = mobileNo+n;
 		}
-		return mobileNumber;
+		return mobileNo;
 	}
 	
 	

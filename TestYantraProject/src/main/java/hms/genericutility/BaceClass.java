@@ -38,7 +38,7 @@ public class BaceClass {
 	String MainUrl = fut.fetchDataFromProperty("hmsurl");
 	
 	/**
-	 * 
+	 * connect to the database
 	 */
 	@BeforeSuite(groups = {"smoke","regression"})
 	public void connectToDB() {

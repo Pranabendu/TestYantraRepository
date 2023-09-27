@@ -23,10 +23,10 @@ public class FetchDataFromExcelByDataProvider {
 	String [][] provide() throws EncryptedDocumentException, IOException{
 		int lastrownum = 0;
 		
-			FileInputStream finp = new FileInputStream("./files/Book1.xlsx");
-			Workbook book = WorkbookFactory.create(finp);
-			Sheet sheet = book.getSheet("Sheet1");
-			lastrownum=sheet.getLastRowNum();
+		FileInputStream finp = new FileInputStream("./files/Book1.xlsx");
+		Workbook book = WorkbookFactory.create(finp);
+		Sheet sheet = book.getSheet("Sheet1");
+		lastrownum = sheet.getLastRowNum();
 
 		String [][] arr = new String[lastrownum][2];
 		try {

@@ -22,25 +22,42 @@ public class BrokenLinkFind {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.amazon.in");
 		List<WebElement> linktags = driver.findElements(By.xpath("//a"));
-		for(WebElement tag : linktags) {
-			String link = tag.getAttribute("href");
+		
+		for(WebElement ele : linktags) {
+			String link = ele.getAttribute("href");
 			try {
 				URL url = new URL(link);
-				URLConnection conn;
-				try {
-					conn = url.openConnection();
-					HttpURLConnection httpconn = (HttpURLConnection) conn;
-					if (httpconn.getResponseCode()>=400) {
-						System.out.println(link);
-					}
-				} catch (IOException e) {
-					e.printStackTrace();
+				URLConnection conn = url.openConnection();
+				HttpURLConnection httpconn = (HttpURLConnection) conn;
+				int response = httpconn.getResponseCode();
+				if(response>=400) {
+					System.out.println(link+" "+response);
 				}
-				
-			} catch (MalformedURLException e) {
+			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		}
 		driver.close();
+		
+//		for(WebElement tag : linktags) {
+//			String link = tag.getAttribute("href");
+//			try {
+//				URL url = new URL(link);
+//				URLConnection conn;
+//				try {
+//					conn = url.openConnection();
+//					HttpURLConnection httpconn = (HttpURLConnection) conn;
+//					if (httpconn.getResponseCode()>=400) {
+//						System.out.println(link);
+//					}
+//				} catch (IOException e) {
+//					e.printStackTrace();
+//				}
+//				
+//			} catch (MalformedURLException e) {
+//				e.printStackTrace();
+//			}
+//		}
+//		driver.close();
 	}
 }

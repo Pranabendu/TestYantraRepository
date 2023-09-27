@@ -11,6 +11,18 @@ package practice;
 public class Bro {
 
 	public static void main(String[] args) {
+//		String [] ran = new String[10];
+//		Random r = new Random();
+//		for (int i = 0; i < 10; i++) {
+//			int m = r.nextInt(10);
+//			ran[i] = Integer.toString(m);
+//		}
+//		String mobileNo = "";
+//		for(String n:ran) {
+//			mobileNo = mobileNo+n;
+//		}
+//		System.out.println(mobileNo);
+	
 		
 		String s = "aeiou";
 		for (int i = 0; i < 5; i++) {
