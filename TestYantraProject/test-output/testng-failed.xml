@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practice.FetchDataFromExcelByDataProvider">
+      <class name="practice.MyntraTask">
         <methods>
-          <include name="use" invocation-numbers="0"/>
+          <include name="myntra"/>
         </methods>
-      </class> <!-- practice.FetchDataFromExcelByDataProvider -->
+      </class> <!-- practice.MyntraTask -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
