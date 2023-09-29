@@ -78,6 +78,7 @@ public class WebActionUtility {
 			driver.switchTo().window(wid);
 			if (driver.getCurrentUrl().contains(partialwindowurl)) {
 				System.out.println("switching window is done succesfully according to the url");
+				break;
 			}
 		}
 	}
