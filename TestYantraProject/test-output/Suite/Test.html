@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/4</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Sep 20 12:36:18 IST 2023</td>
+<td>Started on:</td><td>Wed Oct 04 10:57:12 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>9 seconds (9099 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (72 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,25 +76,193 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Parallel_And_CrossBrowser_Testing.Amazon.icc()'><b>icc</b><br>Test class: Parallel_And_CrossBrowser_Testing.Amazon</td>
+<td title='Parallel_And_CrossBrowser_Testing.Amazon.launch()'><b>launch</b><br>Test class: Parallel_And_CrossBrowser_Testing.Amazon</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;test&apos; is required by BeforeMethod on method launch but has not been marked @Optional or defined
+in C:\Users\PRANABENDU\git\SDET49\TestYantraProject\paralleMethods.xml
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1870135292", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1870135292'><pre>org.testng.TestNGException: 
+Parameter &apos;test&apos; is required by BeforeMethod on method launch but has not been marked @Optional or defined
+in C:\Users\PRANABENDU\git\SDET49\TestYantraProject\paralleMethods.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>-1696397232</td>
+<td>Parallel_And_CrossBrowser_Testing.Amazon@3023df74</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Parallel_And_CrossBrowser_Testing.Amazon.launch()'><b>launch</b><br>Test class: Parallel_And_CrossBrowser_Testing.Amazon</td>
 <td></td>
-<td>7</td>
-<td>Parallel_And_CrossBrowser_Testing.Amazon@6aeb35e6</td></tr>
+<td>0</td>
+<td>Parallel_And_CrossBrowser_Testing.Amazon@3023df74</td></tr>
+<tr>
+<td title='Parallel_And_CrossBrowser_Testing.Amazon.launch()'><b>launch</b><br>Test class: Parallel_And_CrossBrowser_Testing.Amazon</td>
+<td></td>
+<td>0</td>
+<td>Parallel_And_CrossBrowser_Testing.Amazon@3023df74</td></tr>
+<tr>
+<td title='Parallel_And_CrossBrowser_Testing.Amazon.launch()'><b>launch</b><br>Test class: Parallel_And_CrossBrowser_Testing.Amazon</td>
+<td></td>
+<td>0</td>
+<td>Parallel_And_CrossBrowser_Testing.Amazon@3023df74</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='Parallel_And_CrossBrowser_Testing.Amazon.flipkart()'><b>flipkart</b><br>Test class: Parallel_And_CrossBrowser_Testing.Amazon</td>
-<td></td>
-<td>8</td>
-<td>Parallel_And_CrossBrowser_Testing.Amazon@6aeb35e6</td></tr>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;test&apos; is required by BeforeMethod on method launch but has not been marked @Optional or defined
+in C:\Users\PRANABENDU\git\SDET49\TestYantraProject\paralleMethods.xml
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2095720940", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2095720940'><pre>org.testng.TestNGException: 
+Parameter &apos;test&apos; is required by BeforeMethod on method launch but has not been marked @Optional or defined
+in C:\Users\PRANABENDU\git\SDET49\TestYantraProject\paralleMethods.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>Parallel_And_CrossBrowser_Testing.Amazon@3023df74</td></tr>
 <tr>
 <td title='Parallel_And_CrossBrowser_Testing.Amazon.trip()'><b>trip</b><br>Test class: Parallel_And_CrossBrowser_Testing.Amazon</td>
-<td></td>
-<td>6</td>
-<td>Parallel_And_CrossBrowser_Testing.Amazon@6aeb35e6</td></tr>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;test&apos; is required by BeforeMethod on method launch but has not been marked @Optional or defined
+in C:\Users\PRANABENDU\git\SDET49\TestYantraProject\paralleMethods.xml
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1646028459", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1646028459'><pre>org.testng.TestNGException: 
+Parameter &apos;test&apos; is required by BeforeMethod on method launch but has not been marked @Optional or defined
+in C:\Users\PRANABENDU\git\SDET49\TestYantraProject\paralleMethods.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>Parallel_And_CrossBrowser_Testing.Amazon@3023df74</td></tr>
+<tr>
+<td title='Parallel_And_CrossBrowser_Testing.Amazon.icc()'><b>icc</b><br>Test class: Parallel_And_CrossBrowser_Testing.Amazon</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;test&apos; is required by BeforeMethod on method launch but has not been marked @Optional or defined
+in C:\Users\PRANABENDU\git\SDET49\TestYantraProject\paralleMethods.xml
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace663464080", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace663464080'><pre>org.testng.TestNGException: 
+Parameter &apos;test&apos; is required by BeforeMethod on method launch but has not been marked @Optional or defined
+in C:\Users\PRANABENDU\git\SDET49\TestYantraProject\paralleMethods.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>Parallel_And_CrossBrowser_Testing.Amazon@3023df74</td></tr>
 <tr>
 <td title='Parallel_And_CrossBrowser_Testing.Amazon.amazon()'><b>amazon</b><br>Test class: Parallel_And_CrossBrowser_Testing.Amazon</td>
-<td></td>
-<td>9</td>
-<td>Parallel_And_CrossBrowser_Testing.Amazon@6aeb35e6</td></tr>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;test&apos; is required by BeforeMethod on method launch but has not been marked @Optional or defined
+in C:\Users\PRANABENDU\git\SDET49\TestYantraProject\paralleMethods.xml
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace868230413", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace868230413'><pre>org.testng.TestNGException: 
+Parameter &apos;test&apos; is required by BeforeMethod on method launch but has not been marked @Optional or defined
+in C:\Users\PRANABENDU\git\SDET49\TestYantraProject\paralleMethods.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>Parallel_And_CrossBrowser_Testing.Amazon@3023df74</td></tr>
 </table><p>
 </body>
 </html>

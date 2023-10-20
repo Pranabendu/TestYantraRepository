@@ -1,6 +1,5 @@
 package practice;
 
-import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -31,13 +30,18 @@ public class BrokenLinkFind {
 				HttpURLConnection httpconn = (HttpURLConnection) conn;
 				int response = httpconn.getResponseCode();
 				if(response>=400) {
-					System.out.println(link+" "+response);
+//					System.err.println(link+" "+response);
+					System.out.print(link+" ");
+					System.err.print(response);
+					
 				}
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
+			System.out.println();
 		}
 		driver.close();
+
 		
 //		for(WebElement tag : linktags) {
 //			String link = tag.getAttribute("href");

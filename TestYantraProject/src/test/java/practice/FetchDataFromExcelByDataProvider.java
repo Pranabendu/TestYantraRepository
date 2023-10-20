@@ -31,13 +31,13 @@ public class FetchDataFromExcelByDataProvider {
 		String [][] arr = new String[lastrownum][2];
 		try {
 			for (int i = 0; i < lastrownum; i++) {
-			 for (int j = 0; j < 2; j++) {
-				Row row = sheet.getRow(i);
-				Cell cell = row.getCell(j);
-				String value = cell.toString();
-				arr[i][j] = value;
+				for (int j = 0; j < 2; j++) {
+					Row row = sheet.getRow(i);
+					Cell cell = row.getCell(j);
+					String value = cell.toString();
+					arr[i][j] = value;
+				}
 			}
-		}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

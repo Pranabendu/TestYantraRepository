@@ -8,7 +8,6 @@ import org.testng.ITestResult;
  * Internet issue,server issue, some instance internal issue.
  * that time it will reExecute the script till the given limit
  * @author PRANABENDU
- *
  */
 
 public class RetryImplementation implements IRetryAnalyzer

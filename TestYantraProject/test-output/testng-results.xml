@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-28T00:34:54 IST" name="Default suite" finished-at="2023-09-28T00:35:29 IST" duration-ms="34868">
+  <suite started-at="2023-10-06T00:19:29 IST" name="Default suite" finished-at="2023-10-06T00:20:46 IST" duration-ms="77155">
     <groups>
     </groups>
-    <test started-at="2023-09-28T00:34:54 IST" name="Default test" finished-at="2023-09-28T00:35:29 IST" duration-ms="34868">
-      <class name="practice.MyntraTask">
-        <test-method signature="myntra()[pri:0, instance:practice.MyntraTask@409bf450]" started-at="2023-09-28T00:34:54 IST" name="myntra" finished-at="2023-09-28T00:35:29 IST" duration-ms="34828" status="PASS">
+    <test started-at="2023-10-06T00:19:29 IST" name="Default test" finished-at="2023-10-06T00:20:46 IST" duration-ms="77155">
+      <class name="practice.BrokenLinkFind">
+        <test-method signature="brokenlink()[pri:0, instance:practice.BrokenLinkFind@3349e9bb]" started-at="2023-10-06T00:19:29 IST" name="brokenlink" finished-at="2023-10-06T00:20:46 IST" duration-ms="77121" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- myntra -->
-      </class> <!-- practice.MyntraTask -->
+        </test-method> <!-- brokenlink -->
+      </class> <!-- practice.BrokenLinkFind -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

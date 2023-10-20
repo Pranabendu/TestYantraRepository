@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Amazon{
+public class Amazon {
 	@Test
 	void amazon() {
 		WebDriverManager.chromedriver().setup();
